@@ -1,0 +1,10 @@
+
+<p>Click Link to download file</p>
+
+<% @sfile.each do |file| %>
+   <li><%= link_to "#{file}", :controller => 'upload', :action => 'downloadfile',
+    :id => file %></li>
+
+    <% end %>
+
+<p><%= link_to 'Back to index', :controller => 'upload', :action => 'index' %></p>
